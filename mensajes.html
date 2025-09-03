@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mensajes de Amor 💌</title>
+  <link rel="stylesheet" href="assets/css/mensajes.css">
+</head>
+<body>
+     <!-- Contenedor de los corazones flotantes -->
+  <div class="floating-hearts"></div>
+  
+  <div class="messages-container">
+    <h1 class="messages-title">Mensajes de Amor Para Ti  te amoo 💖</h1>
+    <div class="message-box">
+      <p id="typedMessage"></p>
+    </div>
+
+    <div class="animated-message">
+      <p>💌 Mi amor, mi vida hermosa, no encuentro palabras suficientes para expresarte cuánto significas para mí 🥺. Eres mi niña, la que hace que todo lo simple se vuelva especial y la que me llena de alegría con solo escucharte. Disfruto demasiado nuestras risas, nuestras llamadas y hasta los silencios, porque contigo todo se siente perfecto 💓. Eres la niña de mis ojos, mis ojitos bonitos 😍, la que quiero siempre a mi lado. Bby hermosa, gracias por estar conmigo, por enseñarme a ser mejor y por no soltarme en mis días difíciles. Te quiero mucho con todo mi corazón ❤️ </p>
+    </div>
+    
+    
+    
+ <a href="#" onclick="goBackToMenu()" class="back-link">Volver al Menú</a>
+  </div>
+  <audio id="backgroundMusic" loop>
+    <source src="assets/music/Pero Te Conocí.mp3" type="audio/mpeg">
+  </audio>
+ <!-- Agrega este script al final -->
+<script>
+function goBackToMenu() {
+    // Verificar si podemos ir atrás en el historial
+    if (window.history.length > 1) {
+        window.history.back();
+    } else {
+        // Si no hay historial, ir directamente al index
+        window.location.href = "home.html";
+    }
+}
+
+// Reproducir música
+window.addEventListener('load', () => {
+    const backgroundMusic = document.getElementById('backgroundMusic');
+    if (backgroundMusic) {
+        backgroundMusic.play();
+    }
+});
+</script>
+  <script src="assets/js/mensajes.js"></script>
+</body>
+</html>

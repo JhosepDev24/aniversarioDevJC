@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestro Aniversario</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="floating-hearts" id="floating-hearts"></div>
+    
+    <div class="container">
+        <!-- Content Section -->
+        <div class="content" id="content-section">
+            <div class="photo-frame">
+                <div class="photo-placeholder">
+                    <i class="fas fa-heart"></i>
+                </div>
+            </div>
+            
+            <h2>Feliz Aniversario Mi Amor <span class="love-emoji">💕</span></h2>
+            
+<div class="letter-container">
+    <p>PARA LA NIÑA DE MI CORAZÓN 🥺❤️‍🩹</p>
+    <p>
+        Mi amor, hoy celebramos 7 meses desde que empezamos esta historia tan bonita juntos ✨. 
+        Han sido meses de aprendizajes, de risas, de apoyo mutuo y de mucho cariño. 
+        Mi niña bonita, eres la razón por la que mis días son más felices y la que siempre me motiva a ser mejor persona 💓.
+    </p>
+    <p>
+        No sabes cuánto valoro cada momento contigo, porque los más bonitos de mi vida los paso a tu lado 🥹💕. 
+        Quiero seguir esta historia, pero solo contigo, porque si no estuvieras tú nada tendría sentido ❤️‍🩹. 
+        Eres mi vida preciosa, mi reina, mi bby hermosa… y contigo quiero cumplir todo lo que hemos prometido juntos. 
+        Hoy es un día muy especial para nosotros, mi amor 💖.
+    </p>
+    <p>Con todo mi cariño,</p>
+    <p>SRJ ❤️‍🩹</p>
+</div>
+
+
+            <div class="button-container">
+                <!-- Botón de Sorpresas para ti -->
+                <button id="surprise-btn" class="surprise-btn">
+                    Sorpresas para ti <i class="fas fa-gift"></i>
+                </button>
+                
+                <!-- Botón existente de Leer carta -->
+               
+            </div>
+            
+            <!-- Modal de Sorpresas -->
+            <div class="surprise-modal" id="surprise-modal">
+                <div class="surprise-modal-content">
+                    <span class="surprise-modal-close" id="surprise-modal-close">&times;</span>
+                    <h2>Sorpresas para ti <span class="love-emoji">🎁</span></h2>
+                    <p>Elige una de estas sorpresas especiales que preparé para ti:</p>
+                    
+                    <div class="surprise-buttons">
+                        <button class="surprise-button" onclick="redirectToPage('flores.html')">
+                            <i class="fas fa-rose"></i>
+                            <span>Flores</span>
+                        </button>
+                        
+                        <button class="surprise-button" onclick="redirectToPage('carta.html')">
+                            <i class="fas fa-envelope-open-heart"></i>
+                            <span>Carta</span>
+                        </button>
+                        
+                        <button class="surprise-button" onclick="redirectToPage('video.html')">
+                            <i class="fas fa-video"></i>
+                            <span>Video</span>
+                        </button>
+                        
+                        <button class="surprise-button" onclick="redirectToPage('mensajes.html')">
+                            <i class="fas fa-images"></i>
+                            <span>Mensajes</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+           
+            
+            <!-- Carousel Section -->
+            <h2 class="section-title">Nuestros Momentos <span class="love-emoji">📸</span></h2>
+ <div class="carousel-container">
+        <div class="carousel" id="carousel">
+            <div class="carousel-item">
+                <div class="photo-container">
+                    <img src="assets/img/imagen1.jpeg" alt="Imagen 1">
+                </div>
+                <div class="carousel-caption">Imagen 1</div>
+            </div>
+            <div class="carousel-item">
+                <div class="photo-container">
+                    <img src="assets/img/imagen2.jpeg" alt="Imagen 2">
+                </div>
+                <div class="carousel-caption">Imagen 2</div>
+            </div>
+            <div class="carousel-item">
+                <div class="photo-container">
+                    <img src="assets/img/imagen3.jpeg" alt="Imagen 3">
+                </div>
+                <div class="carousel-caption">Imagen 3</div>
+            </div>
+            <div class="carousel-item">
+                <div class="photo-container">
+                    <img src="assets/img/imagen4.jpeg" alt="Imagen 4">
+                </div>
+                <div class="carousel-caption">Imagen 4</div>
+            </div>
+            <div class="carousel-item">
+                <div class="photo-container">
+                    <img src="assets/img/imagen5.jpeg" alt="Imagen 5">
+                </div>
+                <div class="carousel-caption">Imagen 5</div>
+            </div>
+            <div class="carousel-item">
+                <div class="photo-container">
+                    <img src="assets/img/imagen6.jpeg" alt="Imagen 6">
+                </div>
+                <div class="carousel-caption">Imagen 6</div>
+            </div>
+            <div class="carousel-item">
+                <div class="photo-container">
+                    <img src="assets/img/imagen7.jpeg" alt="Imagen 7">
+                </div>
+                <div class="carousel-caption">Imagen 7</div>
+            </div>
+        </div>
+        
+        <div class="carousel-nav">
+            <button id="prev-btn">&lt;</button>
+            <button id="next-btn">&gt;</button>
+        </div>
+        
+        <div class="carousel-controls" id="carousel-controls"></div>
+    </div>   
+    
+            <!-- Message Form -->
+            <h2 class="section-title">Escribe tu mensaje <span class="love-emoji">💌</span></h2>
+            <div class="message-form">
+                <h3>Escríbeme algo bonito</h3>
+                <textarea id="message" placeholder="Escribe tu mensaje de amor aquí..."></textarea>
+                <button class="whatsapp-btn" id="send-btn"><i class="fab fa-whatsapp"></i> Enviar por WhatsApp</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal for Letter -->
+    <div class="modal" id="letter-modal">
+        <div class="modal-content">
+            <span class="modal-close" id="close-modal">&times;</span>
+            <h2>Para Mi Elizabeth <span class="modal-love-emoji">💖</span></h2>
+            <p>Mi amor,</p>
+            <p>Hoy hace exactamente un año que decidimos oficialmente ser novios, pero en realidad llevamos mucho más tiempo construyendo algo hermoso.</p>
+            <p>Estos 4 años y 3 meses contigo han sido los mejores de mi vida. Eres mi confidente, mi mejor amiga y el amor de mi vida.</p>
+            <p>Me encanta cómo iluminas cada habitación con tu sonrisa, cómo cuidas de mí y cómo siempre sabes qué decir para alegrarme el día.</p>
+            <p>Prometo amarte, respetarte y hacerte feliz cada día de mi vida. No puedo esperar para vivir muchas más aventuras a tu lado.</p>
+            <p>Te amo más de lo que las palabras pueden expresar.</p>
+            <p>Para siempre tuya,</p>
+            <p class="modal-signature">Tu novio ❤️</p>
+        </div>
+        
+        <div class="modal-scroll-indicator">
+            <i class="fas fa-chevron-down"></i> Desliza para continuar leyendo
+        </div>
+    </div>
+    
+    
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

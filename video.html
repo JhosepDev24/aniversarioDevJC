@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestro Video Especial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/video.css">
+</head>
+<body>
+    <!-- Contenedor principal con efecto de corazones flotantes -->
+<!-- Contenedor principal con efecto de corazones flotantes -->
+    <div class="video-hero-section">
+        <div class="floating-hearts">
+            <div class="heart" style="--i:1;"></div>
+            <div class="heart" style="--i:2;"></div>
+            <div class="heart" style="--i:3;"></div>
+            <div class="heart" style="--i:4;"></div>
+            <div class="heart" style="--i:5;"></div>
+            <div class="heart" style="--i:6;"></div>
+            <div class="heart" style="--i:7;"></div>
+            <div class="heart" style="--i:8;"></div>
+            <div class="heart" style="--i:9;"></div>
+            <div class="heart" style="--i:10;"></div>
+        </div>
+        
+        <!-- Título romántico -->
+        <div class="video-title-container">
+            <h1 class="video-main-title">Nuestro <span class="love-word">Amor</span></h1>
+            <p class="video-subtitle">Un viaje a través del tiempo</p>
+            <div class="title-decoration">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-heart"></i>
+            </div>
+        </div>
+        
+        <!-- Contenedor del video de YouTube -->
+        <div class="romantic-video-container">
+            <div class="video-frame">
+                <div class="video-overlay"></div>
+                <iframe 
+                    class="youtube-video" 
+                    src="https://www.youtube.com/embed/ssdPQTJyqgM?si=VcD5sNOn2y2MjdMO" 
+                    title="Nuestro video de amor" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+                <div class="play-button" id="playButton">
+                    <i class="fas fa-play"></i>
+                </div>
+                <div class="video-hearts"></div>
+            </div>
+            
+            <!-- Controles personalizados (ocultos para YouTube) -->
+            <div class="custom-controls">
+                <button class="control-btn" id="playPauseBtn">
+                    <i class="fas fa-play"></i>
+                </button>
+                <input type="range" id="progressBar" class="progress-bar" value="0">
+                <button class="control-btn" id="muteBtn">
+                    <i class="fas fa-volume-up"></i>
+                </button>
+                <button class="control-btn" id="fullscreenBtn">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mensaje romántico -->
+        <div class="love-message">
+            <div class="message-container">
+                <h2>Para Mi Princesa</h2>
+                <p class="message-text">"Mi vida, quiero agradecerte por cada cosa linda que me das cada día 🌸. Eres mi amor bonito, mi apoyo, mi risa favorita y mi persona especial. Me encanta cómo me cuentas tus logros con tanta emoción y cómo me enseñas a valorar las pequeñas cosas. Mi amor, sé que no todo es perfecto, hemos tenido diferencias, pero lo importante es que seguimos luchando por lo nuestro y encontrando la manera de salir adelante 💝. Mis ojitos bonitos, tú eres mi mundo, mi ilusión y mi sueño hecho realidad. Bby hermosa, eres la dueña de mis pensamientos ❣️</p>
+                <div class="message-signature">
+                    <p>Con todo mi amor,</p>
+                    <p class="signature">Tu novio ❤️</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Botones de acción -->
+        <div class="action-buttons">
+            <button class="romantic-btn" id="rewatchBtn">
+                <i class="fas fa-redo"></i> Volver a ver
+            </button>
+            <a href="https://www.youtube.com/watch?v=ssdPQTJyqgM" target="_blank" class="romantic-btn">
+                <i class="fab fa-youtube"></i> Ver en YouTube
+            </a>
+            <a href="home.html" class="back-link">Volver al Inicio</a>
+        </div>
+        
+    </div>
+
+    <script src="assets/js/video.js"></script>
+</body>
+</html>

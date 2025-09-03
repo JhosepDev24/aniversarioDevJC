@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta para mi Amor 💖</title>
+    <link rel="stylesheet" href="assets/css/carta.css">
+    
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">
+        Mi princesa 👑
+      </h1>
+      
+    <p class="phrase">
+        Amor ❤️‍🩹 quiero que sepas lo importante que eres para mí, porque contigo aprendí que la felicidad está en tus palabras ✨ y en esa manera tan única que tienes de hacerme sentir especial. Eres mi persona favorita 🌹, la que siempre quiero en mis días, y te quiero mucho con todo mi corazón ❤️.
+    </p>
+    <button class="open-btn" onclick="openModal()">Leer Carta 💌</button>
+</div>
+<div class="back-home">
+  <button onclick="window.location.href='home.html'">Regresar </button>
+</div>
+
+<audio id="backgroundMusic" loop>
+    <source src="assets/music/Te voy a amar.mp3" type="audio/mpeg">
+    Tu navegador no soporta el elemento de audio.
+</audio>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const audio = document.getElementById("backgroundMusic");
+
+        // Intenta reproducir el audio inmediatamente cuando la página carga
+        audio.play().then(() => {
+            audio.currentTime = 12; // Salta los primeros 5 segundos
+        }).catch(error => {
+            console.warn("El navegador bloqueó el autoplay. Se necesita interacción del usuario.");
+        });
+    });
+</script>
+
+<div class="modal" id="modal">
+    <div class="modal-content">
+        <h2>7 mesecitos de nuestra historia de amor 💕</h2>
+        <p>
+            Mi amooooorrrrr❤️🥺 hoy ya son 7 mesecitos de esta historia tan bonita que estamos escribiendo juntos mi vida ✨.  
+            Siete meses que parecen poquitos, pero que para mí significan demasiado, porque en cada día que pasa me demuestras  
+            lo increíble que eres, lo afortunado que soy de tenerte y lo lindo que es compartir mi vida contigo 🫶.
+        </p>
+        <p>
+            Bby, tú eres mi niña hermosa, la razón de tantas sonrisas, la persona que siempre quiero tener cerquita,  
+            la que me motiva y me hace soñar con un futuro juntos 💕. Yo sé que no todo siempre es perfecto y tenemos  
+            nuestras diferencias, peleamos y demás, pero hemos aclarado las cosas para que esto siga funcionando porque  
+            contigo hasta los momentos difíciles valen la pena, porque todo lo haces más bonito, más llevadero, más lleno de amor.
+        </p>
+        <p>
+            Gracias por cada palabra, por cada risa, por cada detalle y por simplemente ser tú, tan especial y tan única conmigo 🥺.  
+            No sabes cuánto agradezco a la vida por haberte puesto en mi camino, mi amorcito. Te amo con todo mi corazón  
+            y de verdad quiero seguir sumando más meses a tu lado ✨.
+        </p>
+        <p>
+            De verdad aprecio mucho que estás conmigo, que me aguantas y que me haces feliz y que me das el regalo más lindo  
+            que es tu amor 💞. Y obvio amor que este 3 de septiembre sea solo otro pasito de todo lo que nos falta por vivir juntos 😍.  
+            Te amoooo mi amor hermosa ❤‍🩹
+        </p>
+        <button class="close-btn" onclick="closeModal()">Cerrar Carta</button>
+    </div>    
+</div>
+
+
+<div class="romantic-section">
+  <img src="assets/img/osin.gif" alt="Ositos enamorados" class="love-gif">
+  <div class="love-phrases">
+      <p>✨ Amor, eres esa razón por la que mi corazón late con fuerza 💓 y mis pensamientos se llenan de ilusiones 🌙. No sabes lo feliz que me hace saber que te tengo, que cuento contigo y que en ti encontré alguien con quien puedo ser yo mismo sin miedo. Te quiero mucho 💖 y me haces sentir la persona más afortunada 🍀.</p>
+      
+  </div>
+</div>
+
+
+
+<script src="assets/js/carta.js"></script>
+</body>
+</html>

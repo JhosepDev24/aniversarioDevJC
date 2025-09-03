@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso Especial - Nuestro Aniversario</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="floating-hearts" id="floating-hearts"></div>
+    
+    <div class="container">
+        <!-- Login Section -->
+        <div class="login-container">
+            <h1>Nuestro Aniversario <span class="love-emoji">💖</span></h1>
+            
+            <div class="input-group">
+                <label for="name">Escribe tu nombre</label>
+                <input type="text" id="name" placeholder="Tu nombre aquí">
+                <div class="error" id="name-error">Por favor escribe tu nombre</div>
+            </div>
+            
+            <div class="input-group">
+                <label for="chat-day">¿Qué día empezamos a hablar por chat?</label>
+                <input type="text" id="chat-day" placeholder="Día y mes (ej: 31 de julio)">
+                <div class="error" id="chat-day-error">Respuesta incorrecta</div>
+            </div>
+            
+            <div class="input-group">
+                <label for="first-message">¿Qué fue lo primero que te dije al iniciar la conversación?</label>
+                <input type="text" id="first-message" placeholder="Primer mensaje">
+                <div class="error" id="first-message-error">Respuesta incorrecta</div>
+            </div>
+            
+            <div class="input-group">
+                <label for="color">¿Cuál es tu color favorito?</label>
+                <input type="text" id="color" placeholder="Tu color preferido">
+                <div class="error" id="color-error">Respuesta incorrecta</div>
+            </div>
+            
+            <div class="input-group">
+                <label for="relationship-day">¿Cuándo nos hicimos novios?</label>
+                <input type="text" id="relationship-day" placeholder="Día y mes (ej: 3 de febrero)">
+                <div class="error" id="relationship-day-error">Respuesta incorrecta</div>
+            </div>
+            
+            <button id="enter-btn">Entrar</button>
+        </div>
+    </div>
+    
+    <script src="assets/js/login.js"></script>
+</body>
+</html>
